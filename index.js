@@ -155,7 +155,17 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    if (user == computer) {
+      return "it's a tie";
+    } else if (user == "rock" && computer == "scissors") {
+      return "you win!";
+    } else if (user == "scissors" && computer == "paper") {
+      return "you win!";
+    } else if (user == "paper" && computer == "rock") {
+      return "you win!";
+    } else {
+      return "you lose!";
+    }
 }
   
   
@@ -201,8 +211,10 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(n){
+        var result = n + " bottles of soda on the wall, " + n + " bottles of soda, ";
+        result += "take one down pass it around " + (n-1) + " bottles of soda on the wall";
+        return result;
   }
 
 
