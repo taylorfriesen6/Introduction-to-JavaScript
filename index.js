@@ -18,7 +18,8 @@ Do the following:
    HINT: no function required
 */
 
-
+var votingAge = 28;
+console.log(votingAge >= 18);
 
 /*
 Task 1b - Values
@@ -31,8 +32,12 @@ Do the following:
    HINT: no function required
 */
 
-
-
+var a=10;
+var b=20;
+if (b==20) {
+  a = 30;
+}
+console.log("a="+a);
 
 
 /*
@@ -46,7 +51,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+var x = "1999";
+console.log(Number(x));
 
 
 /*
